@@ -1,0 +1,549 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+body {
+  font-family: 'Alegreya Sans', sans-serif;
+  padding-top: 70px;
+}
+
+.everything {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 30px;
+  color: #909090;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+  color: #909090;
+}
+
+.indians {
+  background: #000020;
+}
+
+.indians .indians-link, .cavaliers .cavs-link, .browns .browns-link {
+  font-weight: bold;
+}
+
+.cavaliers {
+  background: #722F37;
+}
+
+.browns {
+  background: #FF530D;
+}
+
+.cavaliers .cavs-total,
+.indians .indians-total,
+.browns .browns-total {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  height: 100%;
+  padding-top: 20px;
+}
+
+.cavaliers .cavs-total h1,
+.indians .indians-total h1,
+.browns .browns-total h1 {
+  font-size: 40px;
+  color: #909090;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px;
+}
+
+.cavaliers .cavs-total .cavs-hero img,
+.indians .indians-total .indians-hero img,
+.browns .browns-total .browns-hero img {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;
+}
+
+.cavaliers .cavs-total .cavs-story,
+.indians .indians-total .indians-story,
+.browns .browns-total .browns-story {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.cavaliers .cavs-total .cavs-story .story,
+.indians .indians-total .indians-story .story,
+.browns .browns-total .browns-story .story {
+  border: 1px solid #909090;
+  padding: 15px;
+  line-height: 1.5em;
+}
+
+.cavaliers .cavs-total .cavs-story img,
+.indians .indians-total .indians-story img,
+.browns .browns-total .browns-story img {
+  width: 40%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.cavaliers .cavs-total .cavs-events div {
+  width: 60%;
+  margin: 0 auto;
+  height: 100px;
+  border: 1px solid #909090;
+  padding: 15px;
+  position: relative;
+  line-height: 1.5em;
+}
+.cavaliers .cavs-total .cavs-events div small {
+  font-size: 10px;
+  position: absolute;
+  bottom: 10px;
+}
+
+.indians .indians-total .indians-events ul,
+.browns .browns-total .browns-events ul {
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid #909090;
+  padding: 15px;
+  position: relative;
+  line-height: 1.5em;
+}
+
+.cavaliers .cavs-total .cavs-roster,
+.indians .indians-total .indians-roster,
+.browns .browns-total .browns-roster {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.browns .browns-roster .sub-head {
+  background: #aaaaaa;
+}
+
+.indians .indians-roster .sub-head {
+  background: #aaaaaa;
+}
+
+.home header nav .home-link {
+  font-weight: bold;
+}
+
+header {
+  background: #909090;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+header h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+header .fa-bars {
+  display: none;
+}
+header nav {
+  display: inline-block;
+}
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  vertical-align: middle;
+  padding: 10px;
+  transition: all 250ms linear;
+}
+header a:hover {
+  font-size: 30px;
+}
+header a.icon {
+  float: right;
+  font-size: 20px;
+  margin: 5px;
+  color: black;
+  vertical-align: middle;
+  border: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.hero {
+  position: relative;
+  width: 70%;
+  margin: 0 15%;
+  text-align: center;
+}
+.hero img {
+  width: 100%;
+}
+.hero span {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.headlines {
+  margin-left: 8%;
+}
+.headlines .news-label {
+  color: #909090;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  margin: 5px 0;
+}
+.headlines a {
+  text-decoration: none;
+}
+
+.news1 {
+  background-image: url("/Cleveland-sports/img/lebron-coming-home.jpg");
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  width: 30%;
+  height: 300px;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 10px;
+  margin: 10px;
+}
+.news1 h2 {
+  font-size: 36px;
+  color: white;
+  text-align: center;
+}
+
+.news2 {
+  background-image: url("/Cleveland-sports/img/Indians-vs-sox.jpg");
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  width: 30%;
+  height: 300px;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 10px;
+  margin: 10px;
+}
+.news2 h2 {
+  font-size: 36px;
+  color: white;
+  text-align: center;
+}
+
+.news3 {
+  background-image: url("/Cleveland-sports/img/Josh-Gordon.jpg");
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  width: 30%;
+  height: 300px;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 10px;
+  margin: 10px;
+}
+.news3 h2 {
+  font-size: 36px;
+  color: white;
+  text-align: center;
+}
+
+footer {
+  border-top: 1px solid #909090;
+  margin-top: 150px;
+  color: #909090;
+  padding: 20px;
+  background: white;
+}
+footer a {
+  color: black;
+}
+
+@media screen and (max-width: 760px) {
+  header nav a {
+    font-size: 20px;
+  }
+  header a.icon {
+    padding: 3px;
+  }
+  header h1 {
+    font-size: 25px;
+  }
+
+  .hero span {
+    font-size: 30px;
+  }
+
+  .headlines h2 {
+    font-size: 25px;
+  }
+
+  .cavaliers .cavs-total {
+    width: 100%;
+  }
+  .cavaliers .cavs-total .cavs-roster {
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width: 736px) {
+  .headlines .news1 {
+    width: 80%;
+  }
+  .headlines .news2 {
+    width: 80%;
+  }
+  .headlines .news3 {
+    width: 80%;
+  }
+
+  section.hero {
+    position: relative;
+    width: 100%;
+    margin: 0;
+  }
+  section.hero .cleveland-pic {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 0;
+  }
+  section.hero .quote {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+  }
+}
+@media screen and (max-width: 575px) {
+  body {
+    padding-top: 0;
+  }
+
+  header {
+    width: 100%;
+    background-color: #909090;
+    position: static;
+  }
+  header nav {
+    display: none;
+  }
+  header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+  }
+  header .fa-bars {
+    display: inline-block;
+    font-size: 25px;
+    float: right;
+    margin: 15px 10% 0 0;
+  }
+  header .icon {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+    width: 100%;
+    height: 120px;
+    background: #151515;
+    padding-top: 10px;
+    display: none;
+  }
+  .mobile-menu a {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #909090;
+    font-weight: bold;
+    border-bottom: 2px solid #909090;
+  }
+
+  .menu {
+    display: inline-block;
+  }
+
+  section.hero {
+    position: relative;
+    width: 100%;
+    margin: 0;
+  }
+  section.hero .cleveland-pic {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 0;
+  }
+  section.hero .quote {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+  }
+
+  .headlines .news1 {
+    background-image: url("/Cleveland-sports/img/lebron-coming-home.jpg");
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    width: 80%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 7%;
+    margin-right: 10%;
+  }
+  .headlines .news1 h2 {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+  }
+  .headlines .news2 {
+    background-image: url("/Cleveland-sports/img/Indians-vs-sox.jpg");
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    width: 80%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 7%;
+    margin-right: 10%;
+  }
+  .headlines .news2 h2 {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+  }
+  .headlines .news3 {
+    background-image: url("/Cleveland-sports/img/Josh-Gordon.jpg");
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    width: 80%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 7%;
+    margin-right: 10%;
+  }
+  .headlines .news3 h2 {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+  }
+
+  .cavs-total, .indians-total, .browns-total {
+    width: 100% !important;
+  }
+
+  p {
+    font-size: 80%;
+  }
+
+  .cavs-story, .indians-story, .browns-story {
+    width: 90% !important;
+  }
+
+  .cavaliers .story, .browns .story, .indians .story {
+    width: 100%;
+  }
+  .cavaliers .story img, .browns .story img, .indians .story img {
+    width: 90% !important;
+    height: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cavaliers section.cavs-roster {
+    margin-left: 30px !important;
+  }
+  .cavaliers section.cavs-roster .number {
+    display: none !important;
+  }
+}

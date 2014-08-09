@@ -1,0 +1,80 @@
+Homepage:
+Header
+Cleveland pic
+Intro to teams
+	
+Brief paragraph about teams w/ pics
+Cav’s page:
+Pic
+Info:
+The Cavs have been around since 1970. They are in the Atlantic Division. The team has had moderate success in its history, winning three Central Division Championships (1976, 2009, 2010), an Eastern Conference Championship in 2007, and 18 total playoff seasons.
+News:
+
+Coming Home
+
+Just recently, LeBron James made his decision to return to Cleveland after four years at Miami.  This comes after a brutal loss to the San Antonio Spurs in the NBA Finals.  The Spurs won dominantly four games to one.  James seemed to be the best player on the Heat team, throughout the Finals. On 7/12/2014, LeBron sent a note to Sports Illustrated that he was leaving the Miami Heat, and joining the Cavaliers.  Cleveland went crazy. It turned into the happiest place in the world. Hopefully, with the new coach, the talent we got in the offseason, and hard practice, the Cavs will go far this year.
+More pics
+Key players
+
+
+Indian’s page:
+Same structure as Cav’s
+The Cleveland Indians have been around since 1901. The have won two World Series since. The Cleveland team originated in 1900 as the Lake Shores, when the American League (AL) was officially a minor league. There mascot is a completely un-related being named Slider
+News:
+
+Amazing turn of events
+
+On July 11th the Indians beat out the White Sox. It was an epic game, that some would say was decided by a replay. Asdrubal Cabrera was ruled safe at second after a manager’s challenge. In doing this, the Indians found themselves still on offense in the fifth inning. Lonnie Chisenhall had a huge hit that tied the game, and got himself on base.  Nick Swisher, then had a huge homerun that put the Indians up. The win breaks a four game losing streak to the White Sox, and puts the Indians at .500 for the first time since June 20th.
+
+
+Brown’s page:
+Same structure as Cav’s
+The Browns have been around in the NFL since 1950. The Browns had early success in their existence. In 1995, the Browns were moved to Baltimore for a year, and for another three years, the Browns were without a football team. Since then, the team has been growing and developing.
+News
+
+Josh Gordon Arrested for DWI
+
+Wide receiver Josh Gordon was arrested for DWI on July 5th in North Carolina. Gordon got pulled over at 3 a.m. for going 50mph in a 35mph zone.  His BAL (blood alcohol level) was 0.9 at the time of his arrest, just above North Carolina’s limit of 0.8. He admitted to drinking three vodka drinks. Gordon is to be in court on August 26. He is facing a one year suspension from the NFL. Last year, Josh Gordon was pulled over for speeding. Officers found pot in his Mercedes and a passenger was cited for possession of marijuana. Gordon was suspended for two games at the beginning of the 2013 season.
+
+Quotes:
+
+"Cleveland fans are awesome" -LeBron James
+
+
+Desktop SCSS:
+
+@import "reset";
+@import "library";
+
+
+header{
+	background:lighten(gray, 20%);
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	header-menu{
+	display:none;
+	}
+	img{
+		vertical-align: middle;
+	}
+	a{
+		text-decoration: none;
+		color: $graycolor;
+		padding-bottom: 5px;
+	  	font-size: 25px;
+	  	border-bottom: 2px solid $graycolor;
+	  	vertical-align: middle;
+	  	padding: 10px;
+	}
+	a.icon{
+		float: right;
+		font-size: 20px;
+		margin:5px;
+		color: black;
+		vertical-align: middle;
+		border: none;
+	}
+}

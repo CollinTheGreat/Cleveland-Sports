@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <title>Cleveland Sports</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" media="all">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:400,700' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+</head>
+<body class="home">
+
+    <header>
+        <h1>Cleveland Sports</h1>
+        <i class="fa fa-bars"></i>
+        <nav>
+            <a class="home-link" href="/">Home</a>
+            <a class="cavs-link" href="cavs-page.html">Cavaliers</a>
+            <a class="indians-link" href="indians-page.html">Indians</a>
+            <a class="browns-link" href="browns-page.html">Browns</a>        
+        </nav>
+    </header>
+    <div class="mobile-menu">
+        <a href="cavs-page.html">Cavaliers</a><br>
+        <a href="indians-page.html">Indians</a><br>
+        <a href="browns-page.html">Browns</a><br>       
+    </div>
+    <div class="everything">
+        <section class="hero">
+            <img class="cleveland-pic" src="/img/Cleveland-pic.jpg" alt="Cleveland">
+            <span class="quote">"Cleveland fans are awesome" -LeBron James</span>
+        </section>
+        <div class="pure-g headlines">
+            <div class="news1 pure-u-1-3">
+                <a href="cavs-page.html"><h2>Coming Home</h2></a>
+            </div>
+            <div class="news2 pure-u-1-3">
+                <a href="indians-page.html"><h2>Turn of Events</h2></a>
+            </div>
+            <div class="news3 pure-u-1-3">
+                <a href="browns-page.html"><h2>Josh Gordon arrested for DWI</h2></a>
+            </div>    
+        </div>
+    </div>
+    <footer>
+        <small>Collin Murdock 2014</small>
+        <a href="https://www.facebook.com" class="icon"><i class="fa fa-facebook-square"></i></a>
+        <a href="https://www.twitter.com" class="icon"><i class="fa fa-twitter-square"></i></a>
+        <a href="/Dicks-store/index.html">Dicks</a>
+    </footer>
+    <script>
+        //When .fa-bars gets clicked, add class menu to .mobile-menu.
+        $(function(){
+            $('.fa-bars').click(function(){
+                $('.mobile-menu').toggleClass('menu');
+            });
+        });
+    </script>
+</body>
+</html>
